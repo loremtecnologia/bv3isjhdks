@@ -1,0 +1,517 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tirrell - Biometria vocal</title>
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!--<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="assets/css/fonticons.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="assets/css/plugins.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navmenu">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class='preloader'>
+        <div class='loaded'>&nbsp;</div>
+    </div>
+    <!--Home page style-->
+    <header id="main_menu" class="header">
+        <div class="main_menu_bg navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="nave_menu wow fadeInUp" data-wow-duration="1s">
+                        <nav class="navbar navbar-default" id="navmenu">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">
+                                        <img src="assets/images/logo.png" alt="" />
+                                    </a>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                            <a href="#home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#identificar">Identificar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#reconhecer">Reconhecer</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contato">CONTATO</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <!--End of header -->
+
+
+
+    <section id="home" class="home">
+        <div class="home-overlay-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="main_slider_area">
+                        <div class="slider">
+                            <div class="single_slider wow fadeIn" data-wow-duration="2s">
+                                <h2>Biometria vocal</h2>
+                                <p>Inteligência Artificial</p>
+                                <p>para verificação por voz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Banner Section -->
+
+
+    <section id="identificar" class="domainsearce">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="main_somainsearrce">
+                        <h3>Identificar</h3>
+                        <div class="head_title text-center wow fadeInDown" data-wow-duration="1s">
+                            <h2>Cadastre sua voz</h2>
+                            <p>A identificação é feita a partir do cadastramento de sua voz e a associação do seu CPF.</p>
+                            <p>Para realizar o cadastramento preencha o campo com o número do seu CPF e clique em "Iniciar gravação"
+                                para gravar sua voz.</p>
+                            <p>São 19 segundos de gravação.</p>
+
+                            <p>CPF:
+                                <input type="text" id="cpf" placeholder="999.999.999-99" maxlength="14">
+                            </p>
+                            <p>
+                                <button type="button" id="btnIdentificar" class="btn btn-info btn-lg" disabled="disabled" onclick="enrollNewProfile(); getbase();">Iniciar gravação</button>
+                            </p>
+                        </div>
+
+                        <div class="sercelist wow fadeIn" data-wow-duration="2s">
+                            <div class="single_dotcom_serce text-center">
+                                <ul class="list-inline">
+                                    <li>
+                                        <p>
+                                            <b>Duração</b>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>Status</b>
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            <b>Gravação</b>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul class="list-inline no-border">
+                                    <li>
+                                        <p>
+                                            <span id="contadorIdentificar"></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p id="statusIdentificar">-</p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            <span id="gravacaoIdentificar">-</span>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Você pode utilizar o texto abaixo para realizar seu cadastramento.
+                            </p>
+                            <p>
+                                Leia o texto em voz alta.
+                            </p>
+                            <p style="text-align: justify">
+                                Biometria de voz é um recurso tecnológico que permite confirmar a identidade de uma pessoa por meio da fala e é, no mínimo,
+                                4 vezes mais rápida do que uma confirmação tradicional, que solicita diversas informações
+                                do cliente para validar com o registro.
+                                <br> Timbre da voz, padrões da fala, a forma de vocalização e demais características vocais são
+                                transformadas em códigos e gráficos para a validação e confirmação da identidade de um indivíduo,
+                                ou, cliente.
+                                <br> Isso é possível porque não existem 2 pessoas com vozes idênticas e, com apenas 3 segundos
+                                de fala, a máquina consegue identificar um usuário com muita eficácia. Essas características
+                                garantem uma economia nos gastos com help desk, por exemplo.
+                                <br> Ao diminuir o tempo de execução das confirmações, além de tornar o atendimento mais dinâmico
+                                e eficiente, a biometria de voz também aumenta a segurança das transações — tanto para a
+                                empresa quanto para o cliente.
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reconhecer" class="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+
+                    <div class="main_pricing">
+
+                        <h3>Reconhecer</h3>
+                        <div class="head_title text-center wow fadeInDown" data-wow-duration="1s">
+                            <h2>Reconheça sua voz</h2>
+                            <p>O reconhecimento é feito a partir da gravação de sua voz e a comparação com as vozes préviamente
+                                cadastradas.
+                            </p>
+                            <p>Para realizar o reconhecimento clique em "Iniciar gravação" para gravar sua voz.</p>
+                            <p>São 09 segundos de gravação.</p>
+                            <p>
+                                <button type="button" id="btnReconhecer" class="btn btn-info btn-lg" onclick="startListeningForIdentification(); getbase();">Iniciar gravação</button>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="sercelist wow fadeIn" data-wow-duration="2s">
+                        <div class="single_dotcom_serce text-center">
+                            <ul class="list-inline">
+                                <li>
+                                    <p>
+                                        <b>Duração</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>Status</b>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <b>Gravação</b>
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="list-inline no-border">
+                                <li>
+                                    <p>
+                                        <span id="contadorReconhecer"></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p id="statusReconhecer">-</p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span id="gravacaoReconhecer">-</span>
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Você pode utilizar o texto abaixo para realizar seu cadastramento.
+                        </p>
+                        <p>
+                            Leia o texto em voz alta.
+                        </p>
+                        <p style="text-align: justify">
+                            Biometria de voz é um recurso tecnológico que permite confirmar a identidade de uma pessoa por meio da fala e é, no mínimo,
+                            4 vezes mais rápida do que uma confirmação tradicional, que solicita diversas informações do
+                            cliente para validar com o registro.
+                            <br> Timbre da voz, padrões da fala, a forma de vocalização e demais características vocais são transformadas
+                            em códigos e gráficos para a validação e confirmação da identidade de um indivíduo, ou, cliente.
+                            <br> Isso é possível porque não existem 2 pessoas com vozes idênticas e, com apenas 3 segundos de
+                            fala, a máquina consegue identificar um usuário com muita eficácia. Essas características garantem
+                            uma economia nos gastos com help desk, por exemplo.
+                            <br> Ao diminuir o tempo de execução das confirmações, além de tornar o atendimento mais dinâmico
+                            e eficiente, a biometria de voz também aumenta a segurança das transações — tanto para a empresa
+                            quanto para o cliente.
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- End of Pricing Section -->
+
+
+
+
+    <section id="contato" class="comments">
+        <div class="overlay-fluid-block">
+            <div class="container">
+                <div class="row">
+                    <div class="main_comments wow fadeInUp" data-wow-duration="1.5s">
+                        <div class="main_comments_content">
+                            <div class="single_comments text-center">
+                                <p>"Com a biometria de voz, a identificação de clientes pode ser feita em até 9 segundos e ainda
+                                    pode ser considerada muito mais segura que vários processos de autenticação por questionário."</p>
+
+                            </div>
+                            <div class="single_comments text-center">
+                                <p>“Os smartphones possuem microfones de alta qualidade para captação de áudio e podem ser extremamente
+                                    úteis para autenticar clientes em aplicativos móveis, tanto como login de acesso como
+                                    para validar transações.” </p>
+                            </div>
+                            <div class="single_comments text-center">
+                                <p>“Tanto no caso dos aplicativos como no caso de internet banking e e-commerce, a facilidade
+                                    e a inovação da aplicação de biometria de voz pode garantir um aumento de vendas e um
+                                    diferencial competitivo para sua empresa. Sem falar em aumentar a segurança, especialmente
+                                    no caso de transações.” </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="service">
+        <div class="container">
+            <div class="row">
+                <div class="main_service text-center">
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="single_service wow fadeIn" data-wow-duration="1.7s">
+                            <div class="single_service_icon icon_three">
+                                <a>
+                                    <i class="fa fa-comments"></i>
+                                </a>
+                            </div>
+                            <div class="single_service_deatels">
+
+                                <p>
+                                    <h4>+55 34 3235-5361</h4>
+                                    <h4>+55 11 95143-7476</h4>
+                                    <br>
+                                    <h4>comercial@tirrell.com.br</h4>
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="single_service wow fadeIn" data-wow-duration="2s">
+                            <div class="single_service_icon icon_four">
+                                <a>
+                                    <i class="fa fa-map-marker"></i>
+                                </a>
+                            </div>
+                            <div class="single_service_deatels">
+                                <p>
+                                    <h4>Av. João Naves de Ávila, 1331 Torre UBT - 14º Andar - Sala 148</h4>
+                                    <h4>Tibery Uberlândia - MG - CEP: 38.408-902</h4>
+                                    <br>
+                                    <h4>
+                                        Atendimento nacional com sede em Uberlândia e escritório comercial em São Paulo.</h4>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of service Section -->
+
+
+
+    <footer id="coppyrights" class="coppyrights">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="coppyright">
+                    <p class="wow fadeInUp" data-wow-duration="2s">
+                        <strong>
+                            <a href="http://tirrell.com.br">Tirrell</a>
+                        </strong>© 2018. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- STRAT SCROLL TO TOP -->
+
+    <div class="scrollup">
+        <a href="#">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/speaker-recognition-api-demo-core.js"></script>
+    <script src="assets/js/recorder.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var $seuCampoCpf = $("#cpf");
+            $seuCampoCpf.mask('000.000.000-00', { reverse: true });
+
+            var inputs = $('#cpf');
+            inputs.on('keyup', verificarInputs);
+
+            function verificarInputs() {
+                var preenchidos = true;  // assumir que estão preenchidos
+                inputs.each(function () {
+                    // verificar um a um e passar a false se algum falhar
+                    // no lugar do if pode-se usar alguma função de validação, regex ou outros
+                    if (this.value.length != 14) {
+                        preenchidos = false;
+                        // parar o loop, evitando que mais inputs sejam verificados sem necessidade
+                        return false;
+                    }
+                });
+
+                $('#btnIdentificar').prop('disabled', !preenchidos); // 
+            }
+
+
+        });
+
+        $("#contadorIdentificar").html("00:00:19");
+        $("#contadorReconhecer").html("00:00:09");
+
+        function startCountdown(tempo, tipo) {
+
+            // Se o tempo não for zerado
+            if ((tempo - 1) >= -1) {
+
+                // Pega a parte inteira dos minutos
+                var min = parseInt(tempo / 60);
+                // Calcula os segundos restantes
+                var seg = tempo % 60;
+
+                // Formata o número menor que dez, ex: 08, 07, ...
+                if (min < 10) {
+                    min = "0" + min;
+                    min = min.substr(0, 2);
+                }
+                if (seg <= 9) {
+                    seg = "0" + seg;
+                }
+
+                // Cria a variável para formatar no estilo hora/cronômetro
+                horaImprimivel = '00:' + min + ':' + seg;
+                //JQuery pra setar o valor
+                if (tipo == "identificar") {
+                    $("#contadorIdentificar").html(horaImprimivel);
+                }
+                else if (tipo == "reconhecer") {
+                    $("#contadorReconhecer").html(horaImprimivel);
+                }
+
+                // diminui o tempo
+                tempo--;
+
+                // Define que a função será executada novamente em 1000ms = 1 segundo
+                setTimeout('startCountdown(' + tempo + ', "' + tipo + '")', 1000);
+
+            }
+        }
+
+    </script>
+    <script>
+
+        var recorder;
+        var audio_context;
+
+        function onMediaSuccess(stream, callback, secondsOfAudio) {
+            audio_context = audio_context || new window.AudioContext;
+            var input = audio_context.createMediaStreamSource(stream);
+            recorder = new Recorder(input);
+            recorder.record();
+
+            setTimeout(() => { StopListening(callback); }, secondsOfAudio * 1000);
+        }
+
+        function StopListening(callback) {
+            //console.log('Gravação concluída.');
+            recorder && recorder.stop();
+            recorder.exportWAV(function (blob) {
+                callback(blob);
+            });
+            recorder.clear();
+        }
+
+    </script>
+</body>
+
+</html>
